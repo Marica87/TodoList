@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+
 import './App.css';
+import planner from './tdl12.jpg';
+import td from './tdl22.jpg'
+import { TodoList } from './Todolist';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app' >
+      <div className='container'>
+
+      <img className='img-todo' src={td} alt="plan2" width="250px" />
+      </div>
+      <div className='container'>
+      <h1>TO DO LIST</h1>
+      </div>
+      <TodoList />
+      <div className='containertwo'>
+      <img className='img-todo' src={planner} alt="plan" width="200px" />
+      </div>
+     
+   
+      
+      
     </div>
   );
 }
